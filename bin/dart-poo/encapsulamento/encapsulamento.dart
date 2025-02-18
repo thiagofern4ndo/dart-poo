@@ -28,5 +28,4 @@ var usuario = Usuario('Thiago', 12345678912);
 
 print(usuario.cpf);
 
-
 }
