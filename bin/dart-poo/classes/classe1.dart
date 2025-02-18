@@ -1,9 +1,15 @@
 // Classe, nome da Classe, Parametros da Classe, comportamento da Classe
+// Public
+// Private
 
 class Camiseta {
   String? tamanho;
   String? cor;
-  String? marca;
+  String? marca;  //Atributo de instancia, precisa ser instanciado, pode ter valores modificados
+
+  static const String nome = 'Camiseta'; 
+  
+  static String recuperarNome() => nome;
 
   // Comportamento
   String podeSecarNoSol() {
@@ -15,11 +21,16 @@ class Camiseta {
   }
 }
 
+
+
 void main() {
   var camisetaNike = Camiseta();
   camisetaNike.tamanho = 'G';
   camisetaNike.cor = 'Preta';
   camisetaNike.marca = 'Nike';
+
+  print(Camiseta.nome);
+
 
   print('''
 Tamanho: ${camisetaNike.tamanho}
